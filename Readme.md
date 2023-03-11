@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Полина Рачкова](https://up.htmlacademy.ru/htmlcss/36/user/2211343).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
