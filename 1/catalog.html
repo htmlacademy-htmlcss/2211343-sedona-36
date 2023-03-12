@@ -26,7 +26,7 @@
   <body>
 
   <div class="container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <img class="logo" src="images/logo.svg" alt="Логотип Седона" width="140" height="70">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -64,9 +64,9 @@
       </nav>
     </header>
 
-    <main>
+    <main data-test="main">
 
-      <section class="filter">
+      <section class="filter" data-test="filter">
         <h1 class="text-heading-1">Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <a href="index.html" class="breadcrumbs-link">
@@ -146,7 +146,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <header class="catalog-header">
           <h2 class="text-heading-2">Найдено гостиниц: 38</h2>
 
@@ -301,7 +301,7 @@
         </div>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <form action="#" class="subscribe-form">
           <h3 class="text-heading-2">
             Подпишитесь на рассылку
@@ -312,14 +312,15 @@
           </p>
 
           <div class="subscribe-form-block">
-            <input type="text" placeholder="Ваш e-mail" required>
+            <label for="subscribe-email-input" class="visually-hidden">Ваш e-mail</label>
+            <input type="text" placeholder="Ваш e-mail" id="subscribe-email-input" required>
             <button type="submit" class="button button-second big">Подписаться</button>
           </div>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="socials">
         <a href="https://vk.com/htmlacademy" class="social-link" target="_blank">
           <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
@@ -413,18 +414,18 @@
           </div>
         </div>
         <div class="modal-form-person-group modal-form-group">
-          <label for="input-child-count" class="label-with-tooltip text-heading-4">
-            <span class="label-text">Дети:</span>
+          <span class="label-with-tooltip text-heading-4">
+            <label for="input-child-count" class="label-text">Дети:</label>
             <span class="tooltip">
-                <button class="tooltip-button" type="button">
-                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-                  </svg>
-                </button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
-              </span>
-          </label>
+              <button class="tooltip-button" type="button">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
+              <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
+            </span>
+          </span>
           <div class="modal-from-input-group">
             <button type="button">
               <span class="visually-hidden">Уменьшить количество детей</span>
