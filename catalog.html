@@ -25,7 +25,7 @@
   <body>
 
   <div class="container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <img class="logo" src="images/logo.svg" alt="Логотип Седона" width="140" height="70">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -63,9 +63,9 @@
       </nav>
     </header>
 
-    <main>
+    <main data-test="main">
 
-      <section class="filter">
+      <section class="filter" data-test="filter">
         <h1 class="text-heading-1">Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <a href="index.html" class="breadcrumbs-link">
@@ -145,7 +145,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <header class="catalog-header">
           <h2 class="text-heading-2">Найдено гостиниц: 38</h2>
 
@@ -300,7 +300,7 @@
         </div>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <form action="#" class="subscribe-form">
           <h3 class="text-heading-2">
             Подпишитесь на рассылку
@@ -311,14 +311,15 @@
           </p>
 
           <div class="subscribe-form-block">
-            <input type="text" placeholder="Ваш e-mail" required>
+            <label for="subscribe-email-input" class="visually-hidden">Ваш e-mail</label>
+            <input type="text" placeholder="Ваш e-mail" id="subscribe-email-input" required>
             <button type="submit" class="button button-second big">Подписаться</button>
           </div>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="socials">
         <a href="https://vk.com/htmlacademy" class="social-link" target="_blank">
           <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
