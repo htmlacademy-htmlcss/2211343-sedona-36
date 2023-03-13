@@ -1185,9 +1185,10 @@ main {
 
 .advantages-list .advantages-item {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
   width: calc(100% / 3);
-  height: 385px;
+  min-height: 385px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1667,7 +1668,7 @@ main {
 
 .catalog-item .rating-text {
   box-sizing: border-box;
-  height: 36px;
+  min-height: 36px;
   width: 100%;
   padding: 8px 0;
   font-family: 'PT Sans', serif;
@@ -1704,8 +1705,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  text-align: center;
+  padding: 2px;
+  box-sizing: border-box;
   border-radius: 4px;
   background-color: var(--form-element-2-color);
   text-decoration: none;
