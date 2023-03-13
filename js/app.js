@@ -21,4 +21,3 @@ const closeModalOnClick = event => {
 document.querySelectorAll('[data-on-click-close-modal]').forEach(
   selector => selector.addEventListener('click', closeModalOnClick)
 )
-
